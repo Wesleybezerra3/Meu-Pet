@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --greenStrong: #2e731a;
+  --greenClean: #83a66a;
+  --backColor: #c0e0c0;
+  --corDestaque: #6e40d1;
+  --dekko: "Dekko", "cursive";
+  --poppins: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container:nth-child(5n){
+
+  margin-bottom: 100px;
+
+}
+.container > h1 {
+  font-family: var(--poppins);
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+ 
+}
+.circle {
+  background-color: var(--backColor);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  align-self: center;
+  justify-content: center;
+  border: 3px solid;
+}
+.circle > div {
+  margin: auto;
+  text-align: center;
+}
+.circle > div > h2 {
+  font-size: 1.5em;
+  font-family: var(--dekko);
+  color: var(--corDestaque);
+  font-weight: 600;
+}
+.score {
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score img{
+    width: 200px;
+}
+.scoreItem {
+  border-radius: 50%;
+  width: 20px;
+  height: 18px;
+  background-color: #6e40d1;
+}
+.columns{
+  width: 100%;
+}
+.group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.group p{
+  font-size: 1em;
+  font-family: var(--poppins);
+  font-weight: 500;
+  color: #2a2b2a;
+  margin: 10px 0px;
+}
+.group img{
+  width: 120px;
+}
+summary{
+  position: relative;
+  display:flex ;
+  align-items: center;
+  text-align: center;
+  font-family: var(--poppins);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color:var(--corDestaque);
+  background-color: var(--greenClean);
+  box-shadow: 4px 4px 0 black;
+  padding: 10px;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+}
+summary img{
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  transition-duration: 0.5s;
+}
+summary:hover{
+  background-color: #5b9137;
+  padding: 12px;
+}
+details{
+  margin: 30px 0;
+  transition-duration: 1s;
+}
+details p{
+  font-family: var(--poppins);
+  font-size: 1.1em;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  color: #2a2b2a;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 10px;
+}
+.card {
+  display: grid;
+  align-items: start;
+  background-color: var(--greenClean);
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 black;
+  max-width: 500px;
+  padding: 20px;
+}
+.card:nth-child(2n) {
+  align-self: end;
+  background-color: var(--corDestaque);
+}
+.card h2{
+text-align: center;
+margin-bottom: 10px;
+font-family: var(--poppins);
+font-weight: 500;
+text-transform: uppercase;
+}
+.card span{
+  color: rgb(255, 255, 255);
+}
+.card p{
+  text-align: center;
+  font-family: var(--poppins);
+  font-weight: 500;
+}

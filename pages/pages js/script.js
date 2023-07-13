@@ -5,13 +5,43 @@ $(document).ready(() => {
     rotation += 180;
     $("nav").css("margin-left", `${margin}px`);
     if (margin == 0) {
-      margin = -110;
+      margin = -122;
     } else {
       margin = 0;
     };
     $('.btn').css('transform',`rotate(${rotation}deg)`)
-    if(rotation == 180){
+    if(rotation === 180){
        rotation =- 180;
+    };
+  });
+});
+$(document).ready(()=>{
+  let rotation = 0;
+  $('#summary1').click(()=>{
+    rotation+= 180;
+    $('#arrow1').css('transform',`rotate(${rotation}deg)`)
+    if(rotation === 180){
+        rotation =- 180;
+    };
+  });
+});
+$(document).ready(()=>{
+  let rotation = 0;
+  $('#summary2').click(()=>{
+    rotation+= 180;
+    $('#arrow2').css('transform',`rotate(${rotation}deg)`)
+    if(rotation === 180){
+        rotation =- 180;
+    };
+  });
+});
+$(document).ready(()=>{
+  let rotation = 0;
+  $('#summary3').click(()=>{
+    rotation+= 180;
+    $('#arrow3').css('transform',`rotate(${rotation}deg)`)
+    if(rotation === 180){
+        rotation =- 180;
     };
   });
 });

@@ -212,6 +212,7 @@ footer ul {
   text-align: center;
 }
 .newsletter label{
+  padding: 10px;
   font-family: var(--poppins);
   font-size: 0.9em;
   font-weight: 500;

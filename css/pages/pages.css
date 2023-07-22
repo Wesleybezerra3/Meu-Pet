@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap");
 
-:root {
+  :root {
   --greenStrong: #2e731a;
   --greenClean: #83a66a;
   --backColor: #c0e0c0;
@@ -12,10 +12,11 @@
   --poppins: "Poppins", sans-serif;
   --Rowdies: "Rowdies", cursive;
 }
-* {
+*{
   margin: 0;
   padding: 0;
-  outline: none;
+ 
+
 }
 body {
   width: 100%;
@@ -69,6 +70,7 @@ nav {
   border-left: none;
   transition-duration: 0.5s;
 }
+
 .btn {
   border: none;
   outline: none;
@@ -329,7 +331,7 @@ li {
   display: flex;
   align-items: center;
 
-  background-image: url("/imagens/imgs-dachshund/dachshund-p.jpg");
+  background-image: url('/imagens/imgs-dachshund/dachshund-p.jpg');
   background-position: center;
   background-size: cover;
 
@@ -341,7 +343,7 @@ li {
   transition-duration: 0.5s;
 }
 .itemContainerAside > a:hover,
-:focus {
+.itemContainerAside > a:focus {
   width: 280px;
   height: 280px;
 }
@@ -353,9 +355,6 @@ li {
   color: #2e731a;
   background-color: var(--backColor);
   border-radius: 20px;
-  border: 2px solid black;
-  box-shadow: -4px 3px 0px black;
-
   padding: 8px;
   width: 40%;
   height: 40px;
@@ -458,5 +457,5 @@ footer a {
 footer span {
   color: var(--corDestaque);
   font-weight: bold;
-}
-/*  */
+} 
+ 

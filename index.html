@@ -11,10 +11,12 @@
     ></script>
 
     <script src="js/script.js" defer></script>
+    <script src="js/menu-lateral.js" defer></script>
 
     <!-- Links -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/landing.css" />
     <link rel="stylesheet" href="css/animaçoes.css" />
+    <link rel="stylesheet" href="css/menu-lateral.css">
     <link rel="shortcut icon"
     href="../imagens/img-gerais/favicon-16x16.png" 
     type="image/x-icon"
@@ -30,12 +32,49 @@
     </section>
     <!-- Header -->
     <header>
-      <div id="logo">
-        <img src="imagens/img-gerais/logo.png" alt="Meu pet" />
+      <div id="containerHeader">
+        
+        <button id="openNav">
+          <img src="imagens/img-svg/menu.svg" alt="" />
+        </button>
+        
+        <img src="imagens/img-gerais/Meupet.png" alt="Meu pet" />
       </div>
-      <div id="menu"><img src="imagens/img-svg/menu.svg" alt="" /></div>
     </header>
+    <!-- Menu lateral -->
+    <div id="fade" class="hide"></div>
 
+    <nav class="hide">
+      <div class="content">
+      <div class="headerNav">
+        <button id="closeNav"><img src="imagens/img-svg/menu.svg" alt="" /></button>
+        <p>MeuPet</p>
+      </div>
+        <ul>
+          <li class="itens">
+            <img src="imagens/img-svg/Github-Octicons-Home-24.svg" alt="" />
+            <a href="#">Home</a>
+          </li>
+          <li class="itens">
+            <img src="imagens/img-svg/Github-Octicons-Home-24.svg" alt="" />
+            <a href="#">Home</a>
+          </li>
+          <li class="itens">
+            <img src="imagens/img-svg/Github-Octicons-Home-24.svg" alt="" />
+            <a href="#">Home</a>
+          </li>
+          <li class="itens">
+            <img src="imagens/img-svg/Github-Octicons-Home-24.svg" alt="" />
+            <a href="#">Home</a>
+          </li>
+          <li class="itens">
+            <img src="imagens/img-svg/Github-Octicons-Home-24.svg" alt="" />
+            <a href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--  -->
     <!-- conteúdo -->
     <main>
       <section class="container">
@@ -84,6 +123,7 @@
         </article>
       </section>
     </main>
+    <!-- Footer -->
     <footer>
       <ul>
         <li><a href="pages/pinscher.html">Feedback</a></li>

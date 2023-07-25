@@ -12,6 +12,16 @@
   --poppins: "Poppins", sans-serif;
   --Rowdies: "Rowdies", cursive;
 }
+::-webkit-scrollbar {
+  width: 8px; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--corDestaque); 
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;  
+}
 *{
   margin: 0;
   padding: 0;
@@ -285,7 +295,7 @@ aside h1 {
   color: var(--corDestaque);
   font-size: 1.8em;
 }
-.links ul,
+.links ul,.links
 li {
   list-style: none;
   padding-top: 20px;
@@ -366,35 +376,63 @@ li {
 
 /*  */
 /* FOOTER */
-footer {
+footer{
   border-top: 1px solid var(--greenClean);
   background-color: #ffffff;
   width: 100%;
-  height: 700px;
-}
-footer a:hover {
-  text-decoration: underline;
-  color: var(--greenStrong);
+  height: 800px;
 }
 footer ul {
   list-style: none;
   columns: 2;
-  padding: 10px;
+  padding: 20px;
 }
-.newsletter {
+footer li{
+  padding: 5px;
+}
+
+footer img{
+  max-width: 700px;
+}
+footer p{
+  text-align: center;
+  font-size: 1em;
+  font-family: var(--poppins);
+  font-weight: 300;
+}
+footer a{
+  text-decoration: none;
+  color:#2a2b2a;
+  font-size: 1em;
+  font-weight: 400;
+
+  font-family: var(--poppins);
+  
+  transition-duration: 0.5s;
+}
+footer a:hover,footer a:focus{
+  text-decoration: underline;
+  color:var(--greenStrong) ;
+}
+footer span{
+  color: var(--corDestaque);
+  font-weight: bold;
+
+}
+.newsletter{
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
-.newsletter label {
+.newsletter label{
   padding: 10px;
   font-family: var(--poppins);
   font-size: 0.9em;
   font-weight: 500;
   color: var(--greenStrong);
 }
-.newsletter input {
+.newsletter input{
   padding: 10px;
   width: 80%;
   max-width: 500px;
@@ -405,7 +443,7 @@ footer ul {
   background-color: var(--greenClean);
   margin-top: 20px;
 }
-.newsletter input::placeholder {
+.newsletter input::placeholder{
   color: #000000;
   font-weight: bold;
 }
@@ -435,27 +473,4 @@ footer ul {
 .btnNews:hover {
   background-color: var(--greenStrong);
 }
-footer img {
-  max-width: 700px;
-}
-footer p {
-  text-align: center;
-  font-size: 1em;
-  font-family: var(--poppins);
-  font-weight: 300;
-}
-footer a {
-  text-decoration: none;
-  color: #2a2b2a;
 
-  font-size: 1em;
-  font-weight: 400;
-  font-family: var(--poppins);
-
-  transition-duration: 0.5s;
-}
-footer span {
-  color: var(--corDestaque);
-  font-weight: bold;
-} 
- 

@@ -11,6 +11,18 @@
   --poppins: "Poppins", sans-serif;
   --Rowdies: "Rowdies", cursive;
 }
+
+::-webkit-scrollbar {
+  width: 8px; 
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--corDestaque); 
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;  
+}
 #fade {
   position: fixed;
   top: 0;
@@ -22,13 +34,12 @@
 }
 nav {
   position: fixed;
-  background-color: var(--greenClean);
+  background-color: var(--backColor);
   top: 0;
-  width: 150px;
-  height: 100vh;
+  width: 180px;
+  height: 100%;
   z-index: 10;
   overflow-y: auto;
-  border-radius: 0 50px 50px 0;
 }
  #fade,
   nav {
@@ -70,27 +81,31 @@ nav {
   width: 30px;
   height: 25px;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-}
-.itens {
+.links {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
+  padding: 5px 0 5px 5px;
 }
-.content > ul {
+nav  ul {
   list-style: none;
   padding: 10px;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.692);
 }
-.content li {
-  padding-bottom: 15px;
+nav li {
+  margin-bottom: 15px;
+  height: 35px;
 }
-.content a {
-  color: #fff;
+nav a {
+  color: #2a2b2a;
   text-decoration: none;
-  font-size: 1.2em;
-  font-family: var(--dekko);
-  font-weight: 600;
+  font-size: 1em;
+  font-family: var(--poppins);
+  font-weight: 400;
+}
+nav li:hover, nav li:focus{
+  background-color: rgba(0, 0, 0, 0.068);
+  border-radius: 50px;
 }
 button{
     width: 35px;
@@ -100,4 +115,7 @@ button:hover,
 button:focus {
   background-color: rgba(0, 0, 0, 0.068);
   border-radius: 50px;
+}
+.disable-scrol {
+  overflow-y: hidden;
 }

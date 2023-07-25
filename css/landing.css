@@ -73,7 +73,6 @@ header {
 }
 #containerHeader>button>img{
   width: 28px;
-
 }
 
 
@@ -133,6 +132,7 @@ input:hover{
   margin-top: 10px;
   padding: 10px;
   width: 80%;
+  height: 45px;
   max-width: 600px;
   margin: auto;
   margin-top: 20px;
